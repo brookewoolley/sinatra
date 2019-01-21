@@ -1,5 +1,7 @@
 require 'sinatra'
 
+
+
 get '/' do
   "Hello World"
 end
@@ -21,5 +23,6 @@ get '/me' do
 end
 
 get '/cat' do
+  @cat = ["Amigo", "Oscar", " Viking"].sample
   erb(:index)
 end
